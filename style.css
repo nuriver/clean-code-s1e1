@@ -48,11 +48,13 @@ body {
   padding: 0px;
 }
 
-.tasks__default, h3 {
+.tasks__default, 
+h3 {
   list-style: none;
 }
 
-.task-input, .button{
+.task-input,
+.button{
   outline: none;
 }
 
