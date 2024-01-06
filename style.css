@@ -10,10 +10,10 @@ body {
   display: block;
   text-align: right;
 }
-.header img {
+.header__img {
   width: 100%;
 }
-.header .header__link {
+.header__link {
   font-family: fantasy, cursive;
 }
 
@@ -35,17 +35,17 @@ body {
 .addition-form {
   display: flex;
 }
-ul {
+.tasks {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+.tasks__default, h3 {
   list-style:none;
 }
-input,button{
+.task-input, .button{
   outline:none;
 }
-button {
+.button {
   background: none;
   border: 0px;
   color: #888;
@@ -54,7 +54,7 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.button:hover {
   color: #3a3A3a;
 }
 /* Heading */
@@ -68,7 +68,7 @@ label[for="new-task"] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.task-input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -80,7 +80,7 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.task-input:focus {
   color: #333;
 }
 
@@ -89,12 +89,12 @@ label[for="new-task"] {
   display: block;
   margin: 0 0 20px;
 }
-input#new-task {
+.new-task-input {
   width: 318px;
 }
 
 /* Task list */
-li {
+.tasks__default {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -107,43 +107,43 @@ li > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.tasks__default input[type="checkbox"] {
   margin: 0 10px;
 }
-li > label {
+.task-name {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+.tasks__default .task-name {
   width: 226px
 }
-button.delete-button img {
+.delete-button__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete-button img:hover {
+.delete-button__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+.completed-tasks .task-name {
   text-decoration: line-through
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.tasks__default .task-input {
   display:none
 }
 
-ul li.tasks__default_edit input[type=text] {
+.tasks__default_edit .task-input {
   display:inline-block;
   width:224px
 }
 
-ul li.tasks__default_edit label {
+.tasks__default_edit .task-name {
   display:none;
 }
