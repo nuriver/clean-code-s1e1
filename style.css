@@ -13,6 +13,16 @@ body {
   padding-bottom: 22px;
 }
 
+.page-heading {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .task-addition {
   margin-bottom: 17px;
 }
